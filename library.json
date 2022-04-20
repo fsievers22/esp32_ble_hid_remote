@@ -1,0 +1,23 @@
+{
+    "name": "esp32_ble_hid_remote",
+    "version": "0.0.1",
+    "description": "Bluetooth BLE HID library, to send HID keyboard and cosumer commands to BLE client",
+    "keywords": "planet, happiness, people",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/fsievers22/esp32_ble_hid_remote.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Fabian Sievers"
+      }
+    ],
+    "license": "MIT",
+    "dependencies": {
+      "ownername/print": "~1.3.0"
+    },
+    "frameworks": "espidf",
+    "platforms": "espressif32"
+  }
