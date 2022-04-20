@@ -17,8 +17,11 @@ esp32:
 
 esphome:
   name: blekeyboard
+  includes:
+    - "Esp32BleHidRemote.h"
+    - "Esp32BleHidRemote.cpp"
   libraries:
-    - https://github.com/fsievers22/esp32_ble_hid_remote/archive/refs/tags/v0.0.2-alpha.zip
+    - https://github.com/fsievers22/esp32_ble_hid_remote/archive/refs/tags/v0.0.1-beta.zip
 
 # Enable logging
 logger:
