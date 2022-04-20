@@ -21,7 +21,7 @@ esphome:
     - "Esp32BleHidRemote.h"
     - "Esp32BleHidRemote.cpp"
   libraries:
-    - https://github.com/fsievers22/esp32_ble_hid_remote/archive/refs/tags/v0.0.1-beta.zip
+    - https://github.com/fsievers22/esp32_ble_hid_remote.git
 
 # Enable logging
 logger:

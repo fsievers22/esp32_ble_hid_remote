@@ -8,3 +8,4 @@ include
 CMakeLists.txt
 platformio.ini
 sdkconfig.*
+Esp32Ble*
