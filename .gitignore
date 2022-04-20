@@ -2,10 +2,4 @@
 .vscode
 .esphome
 secrets.yaml
-src
-test
-include
-CMakeLists.txt
-platformio.ini
 sdkconfig.*
-Esp32Ble*
