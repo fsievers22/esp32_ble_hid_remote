@@ -1,9 +1,10 @@
-#include "ble_hid_remote.h"
+#ifndef HID_KEYMAP_H_INCLUDED
+#define HID_KEYMAP_H_INCLUDED
 #include "string.h"
 
 
 struct consumer_cmd_entry{
-    char *str;
+    const char *str;
     consumer_cmd_t n;
 };
 
@@ -51,7 +52,7 @@ struct consumer_cmd_entry consumer_cmd_dict[] = {
 };
 
 struct keyboard_cmd_entry{
-    char *str;
+    const char *str;
     keyboard_cmd_t n;
 };
 
@@ -165,9 +166,9 @@ struct consumer_cmd_entry keyboard_cmd_dict[] = {
     {"LAST_ENTRY",               0}
 };
 
-static keyboard_cmd_t get_keyboard_cmd(char *cmd){
+static keyboard_cmd_t get_keyboard_cmd(const char *cmd){
     uint8_t i = 0;
-    char *cmd_dict = keyboard_cmd_dict[i].str;
+    const char *cmd_dict = keyboard_cmd_dict[i].str;
     while(strcmp(cmd_dict,"LAST_ENTRY") != 0){
         if(strcmp(cmd_dict,cmd) == 0){
             return keyboard_cmd_dict[i].n;
@@ -177,9 +178,9 @@ static keyboard_cmd_t get_keyboard_cmd(char *cmd){
     return 0;
 }
 
-static consumer_cmd_t get_consumer_cmd(char *cmd){
+static consumer_cmd_t get_consumer_cmd(const char *cmd){
     uint8_t i = 0;
-    char *cmd_dict = consumer_cmd_dict[i].str;
+    const char *cmd_dict = consumer_cmd_dict[i].str;
     while(strcmp(cmd_dict,"LAST_ENTRY") != 0){
         if(strcmp(cmd,cmd_dict) == 0){
             return consumer_cmd_dict[i].n;
@@ -188,3 +189,4 @@ static consumer_cmd_t get_consumer_cmd(char *cmd){
     }
     return 0;
 }
+#endif
