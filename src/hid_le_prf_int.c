@@ -117,7 +117,7 @@ static const uint8_t hidReportMap[] = {
     0x09, 0xB6,   //   Usage (Scan Prev)
     0x09, 0xB7,   //   Usage (Stop)
     0x09, 0x23,   //   Usage (Home)
-    0x09, 0xCD,   //   Usage (Play/Pause)
+    0x09, 0xB0,   //   Usage (Play/Pause)
     0x10, 0x23, 0x02, //   Usage (Home alt)
     0x15, 0x01,   //   Logical Min (1)
     0x25, 0x0F,   //   Logical Max (12)
