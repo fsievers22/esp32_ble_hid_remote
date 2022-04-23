@@ -185,9 +185,6 @@ typedef uint16_t consumer_cmd_t;
 #define HID_CC_RPT_SCAN_NEXT_TRK        10
 #define HID_CC_RPT_SCAN_PREV_TRK        11
 #define HID_CC_RPT_STOP                 12
-#define HID_CC_RPT_HOME                 13
-#define HID_CC_RPT_PLAY_PAUSE           14
-#define HID_CC_RPT_HOME_ALT             15
 
 #define HID_CC_RPT_CHANNEL_UP           0x01
 #define HID_CC_RPT_CHANNEL_DOWN         0x03
