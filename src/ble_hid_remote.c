@@ -120,16 +120,6 @@ void hid_consumer_build_report(uint8_t *buffer, consumer_cmd_t cmd)
         case HID_CONSUMER_STOP:
             HID_CC_RPT_SET_BUTTON(buffer, HID_CC_RPT_STOP);
             break;
-        case HID_CONSUMER_PLAY_PAUSE:
-            HID_CC_RPT_SET_BUTTON(buffer, HID_CC_RPT_PLAY_PAUSE);
-            break;
-        case HID_CONSUMER_HOME:
-            HID_CC_RPT_SET_BUTTON(buffer, HID_CC_RPT_HOME);
-            break;
-        case HID_CONSUMER_HOME_ALT:
-            HID_CC_RPT_SET_BUTTON(buffer, HID_CC_RPT_HOME_ALT);
-            break;
-
 
         default:
             break;
