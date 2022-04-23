@@ -37,7 +37,7 @@ struct consumer_cmd_entry consumer_cmd_dict[] = {
     {"HID_CONSUMER_ENTER_DISC",     187}, // Enter Disc
     {"HID_CONSUMER_REPEAT",         188}, // Repeat
     {"HID_CONSUMER_STOP_EJECT",     204}, // Stop/Eject
-    {"HID_CONSUMER_PLAY_PAUSE",     205}, // Play/Pause
+    {"HID_CONSUMER_PLAY_PAUSE",     176}, // Play/Pause
     {"HID_CONSUMER_PLAY_SKIP",      206}, // Play/Skip
     {"HID_CONSUMER_HOME",           35},  //Home
     {"HID_CONSUMER_HOME_ALT",       547}, //Home alt
